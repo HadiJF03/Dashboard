@@ -1,0 +1,145 @@
+html, body{
+    font-family: 'REM', sans-serif;
+    color: white;
+    background: #AED8CC;
+    margin: 0;
+}
+.header{
+    background:#7e22ce;
+    
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 3fr;
+}
+.side-bar{
+    font-size: x-large;
+    font-weight: 700;
+    background-color: #c084fc;
+    grid-area: 1/1/3/2;
+    height: 100vh;
+    padding: 20px;
+}
+.logo img{
+    width: 50px;
+}
+.logo{
+    display: flex;
+    flex: auto;
+    align-items: center;
+    gap: 10px;
+}
+.side-bar ul li{
+    margin-bottom: 20px;
+    padding-left: 20px;
+    transition: all 0.5s;
+}
+.side-bar ul li:hover{
+    text-shadow: 0px 0px 10px #e9d5ff;
+    font-size: xx-large;
+}
+.panel{
+    grid-area: 2/2/3/3;
+
+}
+.icon{
+    width:20px;
+    margin: 0;
+    padding: 0;
+}
+
+#home{
+    list-style-image: url(Assets/home.svg);
+    
+}
+#profile{
+    list-style-image: url(Assets/account.svg);
+}
+#messages{
+    list-style-image: url(Assets/message.svg);
+}
+#history{
+    list-style-image: url(Assets/history.svg);
+}
+#tasks{
+    list-style-image: url(Assets/list-box.svg);
+}
+#communities{
+    list-style-image: url(Assets/account-group.svg);
+}
+#settings{
+    list-style-image: url(Assets/cog.svg);
+}
+#support{
+    list-style-image: url(Assets/help.svg);
+}
+#privacy{
+    list-style-image: url(Assets/shield.svg);
+}
+.avatar{
+    width: 50px;
+}
+.header{
+    padding: 20px 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.lookup{
+    display: flex;
+    gap: 5px;
+}
+.bell{
+    width: 30px;
+}
+.lookup img{
+    width: 30px;
+}
+.lookup input{
+    border-radius: 50px;
+    border-style: none;
+    width: 50vw;
+    height: 30px;
+    background-color: #e9d5ff;
+}
+.id{
+    display: flex;
+    align-items: center;
+    gap: 20px
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.left{
+    display: flex;
+    font-size: larger;
+    align-items: center;
+    gap: 10px;
+}
+.left img{
+    width: 100px;
+}
+.buttons{
+    display: flex;
+    gap: 20px;
+}
+.buttons button{
+    width: 6vw;
+    height: 3vw;
+    border-radius: 50px;
+    border-style: none;
+    background-color: #e9d5ff;
+    transition: all 0.5;
+}
+.buttons button:hover{
+    box-shadow:  0 0 10px 1px white;
+}
+
