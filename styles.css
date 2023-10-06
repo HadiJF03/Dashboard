@@ -1,7 +1,7 @@
 html, body{
     font-family: 'Roboto', sans-serif;
     color: #DEBAC0;
-    background: #AED8CC;
+    background: #DEBAC0;
     margin: 0;
     box-sizing: border-box;
 }
@@ -16,9 +16,10 @@ html, body{
     height: fit-content;
 }
 .grid-container{
+    height: 100vh;
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-rows: auto minmax(0,2fr);
 }
 .side-bar{
     font-size: x-large;
@@ -26,7 +27,6 @@ html, body{
     background-color: #2F323A;
     grid-area: 1/1/3/2;
     padding: 20px;
-    height: 100vh;
 }
 .logo img{
     width: 50px;
@@ -48,6 +48,7 @@ html, body{
 }
 .panel{
     grid-area: 2/2/3/3;
+    display: flex;
 
 }
 .icon{
@@ -166,12 +167,89 @@ html, body{
 .lookup input:focus{
     outline: none;
 }
+#title{
+    margin: 20px 0px 10px 10px;
+    color: #2F323A;
+    font-size: larger;
+    font-weight: bolder;
 
-
-
+}
 .cards{
+    color: #2F323A;
+    margin: 10px 0 0 10px;
     display:grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    gap: 30px;
+}
+.card{
+    background-color: white;
+    width: 30vw;
+    height: 150px ;
+    display: grid;
+    grid-template-columns: 10px auto;
+    border-radius: 10px;
+    box-shadow: 5px 15px 10px -15px rgb(66, 65, 65);
+    
+}
+.accent{
+    background-color: #77567A;
+    border-radius: 10px 0 0 10px;
+}
+.content{
+    display:flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: space-between;
+    
+}
+.card-title{
+    margin-bottom: 10px;
+}
+.card-body{
+    font-size: smaller;
+}
+.card-footer{
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+}
+.social>#title{
+    margin-left: 30px;
+}
 
+.announcements, .trending{
+    background-color: white;
+    color: #2F323A;
+    border-radius: 10px;
+    padding:20px;
+    margin-left: 30px;
+    margin-right:20px;
+    box-shadow: 5px 15px 10px -15px rgb(66, 65, 65);
+}
+
+.ann-title{
+    margin-bottom: 10px;
+}
+.ann-body{
+    font-size: smaller;;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.small-pfp{
+    width: 50px;
+    height:50px
+}
+.user{
+    font-size: small;
+    font-weight: bolder;
+}
+.user-text{
+    font-size: smaller;
+}
+hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
